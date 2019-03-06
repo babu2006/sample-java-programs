@@ -138,12 +138,20 @@
                                     <goal>check</goal>
                                 </goals>
                             </execution>
+               <distributionManagement>
+  		                <repository>
+		                   <id>snapshots</id>
+		                      <url>http://172.16.121.10:8081/repository/snapshots/</url>
+		                </repository>
+                </distributionManagement>
                         </executions>
                     </plugin>
                 </plugins>
             </build>
         </profile>
     </profiles>
+    
+    
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
