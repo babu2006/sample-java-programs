@@ -137,22 +137,20 @@
                                 <goals>
                                     <goal>check</goal>
                                 </goals>
-                            </execution>
-               <distributionManagement>
-  		                <repository>
-		                   <id>snapshots</id>
-		                      <url>http://172.16.121.10:8081/repository/snapshots/</url>
-		                </repository>
-                </distributionManagement>
-                        </executions>
+                            </execution 
+                       </executions>
                     </plugin>
                 </plugins>
             </build>
         </profile>
     </profiles>
-    
-    
-
+		<distributionManagement>
+  		                <repository>
+		                   <id>snapshots</id>
+		                      <url>http://172.16.121.10:8081/repository/snapshots/</url>
+		                </repository>
+                </distributionManagement>
+		
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javac.target>1.8</javac.target>
